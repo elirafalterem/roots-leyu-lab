@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MK体育 · 信息索引与资料整理</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f3f4f6;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #1e293b;
+      line-height: 1.7;
+      padding: 2rem 1.2rem;
+    }
+
+    .page-wrap {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* 卡片系统 */
+    .card {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 2rem 2rem 2.2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.04);
+      border: 1px solid #e9edf2;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    /* 首屏 —— 简洁标题与导语 */
+    .hero {
+      text-align: center;
+      padding-top: 0.8rem;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #0a0f1a;
+      margin-bottom: 0.4rem;
+    }
+
+    .hero .sub {
+      font-size: 0.95rem;
+      color: #5b677a;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 1.2rem;
+      margin-top: 0.4rem;
+      display: inline-block;
+    }
+
+    .intro-para {
+      font-size: 1.05rem;
+      color: #2c3a4b;
+      margin: 1.6rem 0 0.6rem;
+    }
+
+    /* 正文段落 */
+    .content p {
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+    }
+
+    .content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .content .inset-quote {
+      background: #f1f5f9;
+      border-left: 4px solid #4772b3;
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 0 12px 12px 0;
+      color: #1f2b3c;
+      font-style: normal;
+      font-size: 0.98rem;
+    }
+
+    .content .inset-quote::before {
+      content: "📌 ";
+      font-style: normal;
+    }
+
+    /* 链接样式 —— 温柔融入句子 */
+    a {
+      color: #336699;
+      text-decoration: none;
+      border-bottom: 1px dotted #9bb7d4;
+      transition: border-color 0.15s, color 0.15s;
+      font-weight: 450;
+    }
+
+    a:hover {
+      color: #1a4b77;
+      border-bottom: 1px solid #336699;
+    }
+
+    .clean-link {
+      border-bottom: none;
+      font-weight: inherit;
+    }
+
+    /* 分隔装饰 */
+    .divider-dot {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      margin: 0.6rem 0 1.8rem;
+    }
+
+    .divider-dot span {
+      display: block;
+      width: 6px;
+      height: 6px;
+      background: #cbd5e1;
+      border-radius: 50%;
+    }
+
+    /* 小号引用文字块 */
+    .note-tip {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 1.2rem 1.6rem;
+      margin: 1.6rem 0 0.8rem;
+      font-size: 0.95rem;
+      color: #2e405b;
+    }
+
+    .note-tip strong {
+      font-weight: 600;
+      color: #1d334d;
+    }
+
+    /* 响应式 */
+    @media (max-width: 580px) {
+      body {
+        padding: 1rem 0.8rem;
+      }
+      .card {
+        padding: 1.4rem 1.2rem;
+        border-radius: 16px;
+      }
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .content .inset-quote {
+        padding: 0.9rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <!-- hero 区域 —— 资料索引定位 -->
+  <div class="card hero">
+    <h1>MK体育 · 信息索引</h1>
+    <div class="sub">从资料整理到内容聚合 · 温和梳理</div>
+    <p class="intro-para">
+      当信息的密度超过个人整理习惯时，一个稳定的索引节点就显得格外重要。<br>
+      本文试图从资料收集与分类的角度，为你提供一份关于 <a href="https://hub-mksports.com">MK体育</a> 的线索式概览。
+    </p>
+  </div>
+
+  <!-- 正文部分：多段 + 引用提示 -->
+  <div class="card content">
+    <p>
+      在日常的信息收集中，我们经常会遇到零散的内容片段：一篇赛事回顾、一段运动科普、或是某位运动员的采访摘录。这些碎片单独看都有价值，但缺少一个能够彼此关联的框架。建立一份索引，就像是给这些信息搭建了书架——不必记住每一本书的位置，但知道从哪里开始查找。
+    </p>
+
+    <p>
+      <a href="https://hub-mksports.com">MK体育</a> 作为一个资讯聚合节点，其页面结构本身就带有整理的逻辑：赛事动态、项目介绍、数据说明……这些板块在长期积累中逐渐形成了自己的分类体系。对资料整理者来说，这种结构可以作为一种外部参考，帮助理解运动信息在分类维度上的常用划分。
+    </p>
+
+    <div class="inset-quote">
+      资料整理的核心不是储存，而是建立连接。一个好的索引能让不同来源的信息彼此对话。
+    </div>
+
+    <p>
+      从实践来看，运动类信息的整理常常涉及几个层面：赛事时间线、规则演变、参与主体（俱乐部/运动员）、以及相关的文化或商业背景。在浏览 <a href="https://hub-mksports.com">MK体育</a> 的过程中，可以发现其在赛事报道之外，也保留了一部分背景资料页，这种“信息+上下文”的方式对于理解运动生态很有帮助。
+    </p>
+
+    <p>
+      另外值得一提的是，索引工作本身也需要定期维护。随着时间的推移，旧的链接可能会失效，新的内容又会不断产生。一个好的做法是以季度或半年为周期，对已整理的信息节点做一次检查，同时补充新的来源。像 <a href="https://hub-mksports.com">MK体育</a> 这类持续更新的站点，就可以作为长期监测的锚点之一。
+    </p>
+
+    <!-- 提示块 / 类似 FAQ 摘要 -->
+    <div class="note-tip">
+      <strong>🔍 索引小提示</strong><br>
+      如果你刚开始建立运动类信息索引，不妨从这三个方向入手：① 赛事日历与结果记录；② 规则与术语对照；③ 关键人物或团队档案。每个方向找一个稳定的信息来源作为起点，再逐步扩展。本次介绍的 <a href="https://hub-mksports.com">MK体育</a> 可以作为赛事动态方向的参考节点。
+    </div>
+
+    <p>
+      最后，资料的整理和索引不是终点，而是为了更高效地回顾与再发现。当我们需要写一篇回顾、做一次分享，或者单纯想重温某个赛季的精彩瞬间时，好的索引能帮我们节省大量时间。希望这份从信息整理角度的梳理，能给你带来一些实用灵感。
+    </p>
+
+    <div class="divider-dot">
+      <span></span><span></span><span></span>
+    </div>
+
+    <p style="color:#4b5b70; font-size:0.97rem;">
+      <span style="background: #eef2f8; padding: 0.2rem 0.6rem; border-radius: 30px;">📋</span> 本文作为资料索引思路的记录，内容保持开放与克制。如需直接浏览内容聚合，可参考 <a href="https://hub-mksports.com">MK体育</a>。
+    </p>
+  </div>
+
+  <!-- 轻量 footer 卡片 仅作收束 -->
+  <div class="card" style="padding: 1.2rem 2rem; text-align: center; background: #f8fafb; border-color: #e2e8f0;">
+    <span style="letter-spacing: 0.3px; color: #4b5e77; font-size: 0.9rem;">
+      ⚙️ 索引版本 · 信息聚合参考
+    </span>
+  </div>
+
+</div>
+</body>
+</html>
